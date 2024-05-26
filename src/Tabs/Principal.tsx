@@ -27,20 +27,21 @@ export default function Principal(){
             flex={1}
             onPress={() => handleModoChange('Passageiro')}
             variant={modo === 'Passageiro' ? 'solid' : 'outline'}
-            bgColor={modo === 'Passageiro' ? '#4F008E' : '#00A991'}
-            colorScheme={modo === 'Passageiro' ? 'white' : 'black'} // Defina o esquema de cores com base no modo ativo
+            bgColor={modo === 'Passageiro' ? '#4F008E' : 'transparent'}
+            borderColor={"black"}
         >
-            Passageiro
+            <Text color={modo === 'Passageiro' ? 'white' : 'black'}>Passageiro</Text>
         </Botao>
 
         <Botao
             flex={1}
             onPress={() => handleModoChange('Motorista')}
             variant={modo === 'Motorista' ? 'solid' : 'outline'}
-            bgColor={modo === 'Motorista' ? '#4F008E' : '#00A991'}
-            colorScheme={modo === 'Motorista' ? 'white' : 'black'} // Defina o esquema de cores com base no modo ativo
+            bgColor={modo === 'Motorista' ? '#4F008E' : 'transparent'}
+            borderColor={"black"}
+           
         >
-            Motorista
+            <Text color={modo === 'Motorista' ? 'white' : 'black'}>Motorista</Text>
         </Botao>
           
         </HStack>

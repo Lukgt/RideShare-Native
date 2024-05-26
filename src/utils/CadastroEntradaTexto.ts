@@ -1,7 +1,7 @@
 const secoes = [
     {
       id: 1,
-      titulo: 'Insira alguns dados básicos',
+      titulo: 'Crie uma conta',
       entradaTexto: [
         {
           id:1,
@@ -15,12 +15,60 @@ const secoes = [
         },
         {
             id: 3,
+            label: 'Confimação de email',
+            placeholder: 'Digite seu email novamente',
+          },
+        {
+            id: 4,
+            label: 'Empresa',
+            placeholder: 'Digite a empresa onde trabalha',
+            secureTextEntry: true,
+          },
+          {
+            id: 5,
+            label: 'Matricula',
+            placeholder: 'Digite sua matricula',
+          }
+      ],
+      checkbox: [] 
+    },
+    {
+      id:2,
+      titulo: 'Crie uma conta',
+      entradaTexto: [
+        {
+          id:1,
+          label: 'Logradouro',
+          placeholder: 'Digite seu logradouro'
+        },
+        {
+          id: 2,
+          label: 'Número',
+          placeholder: 'Insira seu número'
+        },
+        {
+          id: 3,
+          label: 'Bairro',
+          placeholder: 'Insira seu bairro'
+        },
+        {
+          id: 4,
+          label: 'Cidade',
+          placeholder: 'Insira sua cidade'
+        },
+        {
+          id: 5,
+          label: 'UF',
+          placeholder: 'Insira seu UF'
+        },
+        {
+            id: 6,
             label: 'Crie uma senha',
             placeholder: 'Insira sua senha',
             secureTextEntry: true,
           },
           {
-            id: 4,
+            id: 7,
             label: 'Confirme sua senha',
             placeholder: 'Insira sua senha',
             secureTextEntry: true,
@@ -29,74 +77,38 @@ const secoes = [
       checkbox: [] 
     },
     {
-      id:2,
-      titulo: 'Agora, mais alguns dados sobre você',
-      entradaTexto: [
-        {
-          id:1,
-          label: 'CEP',
-          placeholder: 'Digite seu CEP'
-        },
-        {
-          id: 2,
-          label: 'Endereço',
-          placeholder: 'Insira seu endereço'
-        },
-        {
-          id: 3,
-          label: 'Número',
-          placeholder: 'Insira seu número'
-        },
-        {
-          id: 4,
-          label: 'Complemento',
-          placeholder: 'Insira seu complemento'
-        },
-        {
-          id: 5,
-          label: 'Telefone',
-          placeholder: '(00) 00000-0000'
-        }
-      ],
-      checkbox: [] 
-    },
-    {
       id: 3,
-      titulo: 'Para finalizar, quais são os seus planos?',
+      titulo: 'Para finalizar, quais são seus interreses?',
       entradaTexto: [],
       checkbox: [
         {
           id: 1,
-          value: 'Sulamerica'
+          value: 'Ar-condicionado'
         },
         {
           id: 2,
-          value: 'Unimed'
+          value: 'Fumante'
         },
         {
           id: 3,
-          value: 'Bradesco'
+          value: 'Não fumante'
         },
         {
           id: 4,
-          value: 'Amil'
+          value: 'Música Pop'
         },
         {
           id: 5,
-          value: 'Biosaúde'
+          value: 'Música Funk'
         },
         {
           id: 6,
-          value: 'Biovida'
+          value: 'Música Rock'
         },
         {
           id: 7,
           value: 'Outros'
         },
-        {
-          id: 8,
-          value: 'Não tenho plano'
-        }
       ],
     }
   ]
